@@ -3632,3 +3632,31 @@ body.is-preload-1 .panel > .content {
         align-items: flex-start; /* Align text and icons left */
     }
 }
+
+nav {
+    white-space: nowrap; /* Prevents items from wrapping to the next line */
+    overflow: hidden;    /* Hides any overflowing items */
+    text-overflow: ellipsis; /* Optional: Adds an ellipsis for overflowed items */
+    width: 100%;         /* Ensure the nav takes full width of the container */
+}
+
+nav ul {
+    display: flex;       /* Keeps the list items in a row */
+    justify-content: space-between; /* Ensures even spacing between items */
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    padding: 10px;
+    font-size: 18px;     /* Adjust size if needed */
+}
+
+/* Optional: Hide the nav completely on small screens */
+@media (max-width: 600px) {
+    nav {
+        display: none;   /* Hide navigation completely for small screens */
+    }
+}
