@@ -3557,34 +3557,37 @@ body.is-preload-1 .panel > .content {
 }
 
 .contact2 {
-    margin-top: 5px; /* Reduce top margin to lessen empty space */
-    text-align: center; /* Center text elements */
+    margin-top: 5px;
+    text-align: center;
+    padding: 20px;
+    border: 1px solid white; /* Optional: To visually contain the box */
 }
 
 .contact2 ul {
     list-style: none;
     padding: 0;
-    margin: 0 auto; /* Center the ul */
-    display: inline-block; /* This will help align the list centrally */
+    margin: 0 auto;
+    display: inline-block;
+    text-align: left; /* Ensures text aligns properly */
 }
 
 .contact2 ul li {
-    margin: 15px 0; /* Increase spacing between items */
-    font-size: 22px; /* Increase text size */
+    margin: 15px 0;
+    font-size: 22px;
     display: flex;
-    justify-content: center; /* Center the icons and text horizontally */
-    align-items: center; /* Align items vertically */
+    justify-content: flex-start;
+    align-items: center;
 }
 
 .contact2 ul li i {
-    margin-right: 15px; /* Space between icon and text */
-    font-size: 36px; /* Increase icon size */
+    margin-right: 15px;
+    font-size: 22px;
     color: #333;
 }
 
 .contact2 ul li a {
     text-decoration: none;
-    font-size: 22px; /* Increase size for links */
+    font-size: 22px;
     color: #0073b1;
 }
 
@@ -3592,12 +3595,40 @@ body.is-preload-1 .panel > .content {
     text-decoration: underline;
 }
 
-footer {
-    margin-top: 5px; /* Move the footer slightly closer */
-    text-align: center; /* Center the footer content */
+/* Responsive design */
+@media (max-width: 768px) {
+    .contact2 ul li {
+        font-size: 18px;
+    }
+
+    .contact2 ul li i {
+        font-size: 30px;
+    }
+
+    .contact2 ul {
+        width: 100%; /* Makes sure it spans across the screen on smaller devices */
+    }
+
+    .contact2 {
+        padding: 10px; /* Reduce padding for smaller devices */
+    }
 }
 
-#qualification {
-    margin-bottom: 5px; /* Adjust this to reduce space below the section */
-    padding-bottom: 10px; /* Adjust if there's too much padding inside the section */
+@media (max-width: 480px) {
+    .contact2 ul li {
+        font-size: 16px;
+    }
+
+    .contact2 ul li i {
+        font-size: 28px;
+    }
+
+    .contact2 {
+        padding: 5px; /* Further reduction for smaller mobile devices */
+    }
+
+    .contact2 ul li {
+        flex-direction: column; /* Stack icon and text vertically on small screens */
+        align-items: flex-start; /* Align text and icons left */
+    }
 }
