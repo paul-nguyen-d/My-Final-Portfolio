@@ -3602,3 +3602,18 @@ body.is-preload-1 .panel > .content {
     }
 }
 
+.work-date {
+    white-space: nowrap;
+}
+
+/* You can add a media query to adjust the font size based on screen size if necessary */
+@media only screen and (max-width: 480px) {
+    .work-date {
+        font-size: 13px !important; /* Optional adjustment for smaller screens */}
+}
+
+@media only screen and (max-width: 360px) {
+    .work-date {
+        font-size: 12px !important; /* Optional adjustment for smaller screens */}
+}
+
