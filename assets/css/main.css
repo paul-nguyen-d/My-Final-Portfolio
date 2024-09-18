@@ -307,97 +307,51 @@ textarea {
 }
 
 
-.overlay {
-	position: fixed;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	background-color: rgba(0, 0, 0, 0.8);
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	z-index: 9999;
-}
-ul li{
-	list-style-type: none;
-}
-.overlay img {
-	max-width: 80%;
-	max-height: 80%;
-} */
-/* Modal container */
-.image-wrapper img:hover {
-	transform: scale(1.0);
-	cursor: pointer;
-}
+
+/* The Modal (background) */
 .modal {
-    display: none;
+    display: none; /* Hidden by default */
     position: fixed;
-    z-index: 1;
+    z-index: 1; /* Sit on top */
     left: 0;
     top: 0;
     width: 100%;
     height: 100%;
-    overflow: auto;
-    background-color: rgba(0, 0, 0, 0.9);
-    justify-content: center;
-    align-items: center;
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0, 0, 0, 0.5); /* Black w/ opacity */
 }
 
-/* Modal content (the images) */
+/* Modal Content */
 .modal-content {
-    position: relative;
-    max-width: 80%;
-    max-height: 80%;
+    width: 400px; /* Change as needed */
+    height: 400px;
+    border-radius: 10px; /* Gives a slight rounded look */
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.modal {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: transparent;
 }
 
-/* Images inside the modal */
-.modal-content img {
-    width: 40%;
-    height: 80%;
-	gap: 1rem;
-    object-fit: contain;
-    cursor: default; /* Prevent the images from being clickable */
-}
 
-#education{
-	p{
-		margin: 0;
-	}
-
-	ul li {
-		list-style: none;
-	}
-} 
+/* The Close Button */
 .close {
-	position: absolute;
-	top: 10px;
-	right: 20px;
-	color: white;
-	font-size: 24px;
-	cursor: pointer;
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
 }
 
-#certificates .box.style2 h3 {
-	font-size: 1.5em;
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
 }
 
-#certificates .box.style2 .image.featured {
-	img {
-		max-width: 100%;
-		max-height: 250px;
-		width: auto;
-		height: auto;
-		display: block;
-		margin: 0 auto;
-		padding: 1.5rem;
-	}
-}
 
 /* Basic */
 
@@ -3617,3 +3571,52 @@ body.is-preload-1 .panel > .content {
         font-size: 12px !important; /* Optional adjustment for smaller screens */}
 }
 
+.popup {
+	display: none; /* Hidden by default */
+	position: fixed;
+	z-index: 1;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.5); /* Black background with opacity */
+}
+
+/* Popup content */
+.popup-content {
+	background-color: white;
+	margin: 15% auto;
+	padding: 20px;
+	border: 1px solid #888;
+	width: 60%;
+	text-align: center;
+}
+
+/* Close button */
+.close {
+	color: #aaa;
+	float: right;
+	font-size: 28px;
+	font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+	color: black;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+/* Button for more details */
+.details-btn {
+	margin-top: 10px;
+	background-color: #4CAF50;
+	color: white;
+	padding: 10px 20px;
+	border: none;
+	cursor: pointer;
+}
+
+.details-btn:hover {
+	background-color: #45a049;
+}
