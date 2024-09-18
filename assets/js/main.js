@@ -85,18 +85,3 @@ function consoleText(words, id, colors) {
     }
   }, 400)
 }
-
-function togglePopup(popupId) {
-  var popup = document.getElementById(popupId);
-  popup.style.display = (popup.style.display === "block") ? "none" : "block";
-}
-
-// Close the popup when clicking anywhere outside of it
-window.onclick = function(event) {
-  var popups = document.getElementsByClassName('popup');
-  for (var i = 0; i < popups.length; i++) {
-      if (event.target == popups[i]) {
-          popups[i].style.display = "none";
-      }
-  }
-}
