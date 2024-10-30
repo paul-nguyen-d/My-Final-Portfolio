@@ -1942,10 +1942,6 @@ article:last-child {
 	width: 100%;
 }
 
-.image.fit {
-	display: block;
-	width: 100%;
-}
 
 .image.featured {
 	display: block;
@@ -3620,3 +3616,8 @@ body.is-preload-1 .panel > .content {
 .details-btn:hover {
 	background-color: #45a049;
 }
+
+
+
+
+
